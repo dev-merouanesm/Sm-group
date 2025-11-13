@@ -3,163 +3,348 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>بوابة التوجيه - الفندقة والسياحة</title>
+  <title>Royal Apps - اكتشف الفخامة في عالم التطبيقات</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #1a1a2e;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .crown-icon {
+      filter: drop-shadow(0 0 8px rgba(243, 156, 18, 0.6));
+    }
+    .app-card {
+      background: linear-gradient(145deg, #2c3e50, #1a1a2e);
+      transition: all 0.3s ease;
+    }
+    .app-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(243, 156, 18, 0.3);
+    }
+    .star-rating {
+      color: #f39c12;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #f39c12, #e67e22);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-b from-white via-yellow-50 to-white text-gray-800">
+<body class="text-gray-100">
 
   <!-- Navigation -->
-  <nav class="bg-gray-900 text-white sticky top-0 z-40 shadow">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-center justify-between h-16">
-        <a href="index.html" class="flex items-center gap-2 text-yellow-400 font-bold text-lg">
-          <span>بوابة التوجيه</span>
+  <nav class="bg-gradient-to-r from-gray-900 to-gray-800 sticky top-0 z-50 shadow-lg border-b border-gray-700">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <svg class="w-10 h-10 crown-icon" viewBox="0 0 24 24" fill="#f39c12" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L15 8L21 9L16.5 13.5L17.5 19.5L12 16.5L6.5 19.5L7.5 13.5L3 9L9 8L12 2Z"/>
+            <path d="M5 20h14v2H5z" fill="#f39c12"/>
+          </svg>
+          <span class="text-2xl font-bold gradient-text">Royal Apps</span>
         </a>
-        <div class="hidden md:flex space-x-4 rtl:space-x-reverse text-sm">
-          <a href="index.html" class="hover:text-yellow-400">الرئيسية</a>
-          <a href="institute.html" class="hover:text-yellow-400">المعاهد</a>
-          <a href="resources.html" class="hover:text-yellow-400">الموارد</a>
-          <a href="updates.html" class="hover:text-yellow-400">تحديثات</a>
-          <a href="about.html" class="hover:text-yellow-400">من نحن</a>
+        <div class="hidden md:flex space-x-6 rtl:space-x-reverse text-sm font-medium">
+          <a href="index.html" class="text-yellow-400 hover:text-yellow-300 transition">الرئيسية</a>
+          <a href="platform.html" class="text-gray-300 hover:text-yellow-400 transition">تطبيقات المونتاج</a>
+          <a href="resources.html" class="text-gray-300 hover:text-yellow-400 transition">مواقع التحميل</a>
+          <a href="updates.html" class="text-gray-300 hover:text-yellow-400 transition">تحديثات</a>
+          <a href="about.html" class="text-gray-300 hover:text-yellow-400 transition">من نحن</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <header class="bg-gradient-to-r from-yellow-600 to-yellow-400 text-white">
-    <div class="max-w-6xl mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">أطلق مسارك في الفندقة والسياحة</h1>
-        <p class="mt-4 text-yellow-50 max-w-lg">دورات، تخصصات، وإرشاد مهني خاص بمتدربي معاهد الفندقة والسياحة في المغرب.</p>
-        <div class="mt-6 flex gap-3">
-          <a href="institute.html" class="bg-white text-yellow-700 font-semibold px-5 py-3 rounded-lg shadow hover:bg-gray-100">اكتشف المعاهد</a>
-          <a href="resources.html" class="border border-white px-5 py-3 rounded-lg hover:bg-yellow-500">الموارد التعليمية</a>
+  <!-- Hero Section -->
+  <header class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-yellow-900/20 to-red-900/20"></div>
+    <div class="max-w-7xl mx-auto px-4 py-24 relative z-10">
+      <div class="text-center">
+        <svg class="w-24 h-24 mx-auto mb-6 crown-icon animate-pulse" viewBox="0 0 24 24" fill="#f39c12" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L15 8L21 9L16.5 13.5L17.5 19.5L12 16.5L6.5 19.5L7.5 13.5L3 9L9 8L12 2Z"/>
+          <path d="M5 20h14v2H5z" fill="#f39c12"/>
+        </svg>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+          <span class="gradient-text">اكتشف الفخامة</span>
+          <br/>
+          <span class="text-white">في عالم التطبيقات</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-10">
+          مجموعة مختارة من أفضل التطبيقات والمواقع الاحترافية لتحرير الفيديو والمونتاج
+        </p>
+        <div class="flex gap-4 justify-center flex-wrap">
+          <a href="platform.html" class="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-yellow-500/50 hover:scale-105 transition">
+            تطبيقات المونتاج
+          </a>
+          <a href="resources.html" class="bg-gradient-to-r from-red-600 to-red-700 text-white font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-red-500/50 hover:scale-105 transition">
+            مواقع التحميل
+          </a>
         </div>
-      </div>
-      <div>
-        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=800&q=60" 
-             class="w-full h-72 object-cover rounded-xl shadow-lg" alt="الفندقة">
       </div>
     </div>
   </header>
 
-  <!-- التخصصات -->
-  <main class="max-w-6xl mx-auto px-4 py-12">
-    <h2 class="text-2xl font-bold mb-8 text-gray-800">التخصصات المتوفرة</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Featured Apps Section -->
+  <main class="max-w-7xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-white mb-4">
+        <span class="gradient-text">أفضل التطبيقات</span> المميزة
+      </h2>
+      <p class="text-gray-400 text-lg">تطبيقات احترافية مختارة بعناية لتجربة فاخرة</p>
+    </div>
 
-      <!-- التدبير الفندقي -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1541542684-5a2b0c0f6b2e?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">التدبير الفندقي</h3>
-          <p class="text-sm text-gray-600 mt-2">تكوين في إدارة الفنادق، الموارد البشرية، التسويق، والمحاسبة الفندقية.</p>
+    <!-- Apps Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- App Card 1: CapCut -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">CapCut</h3>
+            <p class="text-sm text-gray-400">تحرير فيديو</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">محرر فيديو احترافي مع مؤثرات بصرية متقدمة وأدوات مونتاج سهلة الاستخدام</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★★</span>
+            <span class="text-white text-sm mr-2">4.8</span>
+          </div>
+          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold">مجاني</span>
         </div>
       </div>
 
-      <!-- فنون الطبخ -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">فنون الطبخ</h3>
-          <p class="text-sm text-gray-600 mt-2">تعلم إعداد الأطباق العالمية والمحلية، تسيير المطابخ، وفنون تقديم الأكل.</p>
+      <!-- App Card 2: Adobe Premiere Rush -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">Premiere Rush</h3>
+            <p class="text-sm text-gray-400">Adobe</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">تطبيق Adobe الاحترافي لتحرير الفيديو على الهاتف مع مزامنة سحابية</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★☆</span>
+            <span class="text-white text-sm mr-2">4.5</span>
+          </div>
+          <span class="bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-xs font-semibold">مدفوع</span>
         </div>
       </div>
 
-      <!-- خدمات المطاعم -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">خدمات المطاعم</h3>
-          <p class="text-sm text-gray-600 mt-2">تكوين في تقنيات الخدمة، تدبير قاعات الأكل، وآداب التعامل مع الزبناء.</p>
+      <!-- App Card 3: KineMaster -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">KineMaster</h3>
+            <p class="text-sm text-gray-400">تحرير متقدم</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">محرر فيديو متعدد الطبقات مع أدوات احترافية وتأثيرات سينمائية</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★★</span>
+            <span class="text-white text-sm mr-2">4.7</span>
+          </div>
+          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold">مجاني</span>
         </div>
       </div>
 
-      <!-- الاستقبال -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">الاستقبال</h3>
-          <p class="text-sm text-gray-600 mt-2">ممارسات مهنية في استقبال النزلاء، الحجز، وإدارة مكتب الاستقبال.</p>
+      <!-- App Card 4: InShot -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM10 12l5.5-3.5L10 5z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">InShot</h3>
+            <p class="text-sm text-gray-400">فيديو وصور</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">محرر شامل للفيديو والصور مع فلاتر وموسيقى ومؤثرات متنوعة</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★★</span>
+            <span class="text-white text-sm mr-2">4.9</span>
+          </div>
+          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold">مجاني</span>
         </div>
       </div>
 
-      <!-- الإرشاد السياحي -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">الإرشاد السياحي</h3>
-          <p class="text-sm text-gray-600 mt-2">تكوين في مرافقة السياح، تسويق الوجهات السياحية، والتواصل الثقافي.</p>
+      <!-- App Card 5: FilmoraGo -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M18 4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4h-4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">FilmoraGo</h3>
+            <p class="text-sm text-gray-400">Wondershare</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">تطبيق سهل الاستخدام مع مكتبة ضخمة من القوالب والمؤثرات الجاهزة</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★☆</span>
+            <span class="text-white text-sm mr-2">4.6</span>
+          </div>
+          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold">مجاني</span>
         </div>
       </div>
 
-      <!-- التسويق السياحي -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?auto=format&fit=crop&w=800&q=60" class="w-full h-40 object-cover">
-        <div class="p-4">
-          <h3 class="font-semibold text-lg text-yellow-700">التسويق السياحي</h3>
-          <p class="text-sm text-gray-600 mt-2">مبادئ الترويج للوجهات السياحية، استراتيجيات التسويق الرقمي.</p>
+      <!-- App Card 6: VN Video Editor -->
+      <div class="app-card rounded-2xl p-6 border border-gray-700">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
+            <svg class="w-10 h-10" viewBox="0 0 24 24" fill="white">
+              <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white">VN Video Editor</h3>
+            <p class="text-sm text-gray-400">محترف</p>
+          </div>
+        </div>
+        <p class="text-gray-300 text-sm mb-4">محرر فيديو قوي بدون علامة مائية مع أدوات احترافية متقدمة</p>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-1 star-rating">
+            <span>★★★★★</span>
+            <span class="text-white text-sm mr-2">4.8</span>
+          </div>
+          <span class="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-semibold">مجاني</span>
         </div>
       </div>
 
     </div>
+
+    <!-- Categories Section -->
+    <div class="mt-20">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        <span class="gradient-text">استكشف الأقسام</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Category 1 -->
+        <a href="platform.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-yellow-600/20 to-orange-600/20 border border-yellow-500/30 p-8 hover:border-yellow-500 transition">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full -mr-16 -mt-16"></div>
+          <div class="relative z-10">
+            <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="white">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">أفضل تطبيقات المونتاج</h3>
+            <p class="text-gray-300">اكتشف أقوى تطبيقات تحرير الفيديو للأندرويد والآيفون</p>
+          </div>
+        </a>
+
+        <!-- Category 2 -->
+        <a href="resources.html" class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-red-600/20 to-pink-600/20 border border-red-500/30 p-8 hover:border-red-500 transition">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-red-500/10 rounded-full -mr-16 -mt-16"></div>
+          <div class="relative z-10">
+            <div class="w-16 h-16 bg-gradient-to-br from-red-600 to-red-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="white">
+                <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">مواقع تحميل التطبيقات</h3>
+            <p class="text-gray-300">أفضل المواقع الموثوقة لتحميل تطبيقات الأندرويد</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 mt-16">
-  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+  <footer class="bg-gradient-to-b from-gray-900 to-black border-t border-gray-800 mt-20">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        
+        <!-- Brand -->
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-10 h-10 crown-icon" viewBox="0 0 24 24" fill="#f39c12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L15 8L21 9L16.5 13.5L17.5 19.5L12 16.5L6.5 19.5L7.5 13.5L3 9L9 8L12 2Z"/>
+              <path d="M5 20h14v2H5z" fill="#f39c12"/>
+            </svg>
+            <span class="text-2xl font-bold gradient-text">Royal Apps</span>
+          </div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            منصة فاخرة لاكتشاف أفضل التطبيقات والمواقع الاحترافية في عالم المونتاج والتحرير
+          </p>
+        </div>
 
-    <!-- Logo & About -->
-    <div>
-      <h2 class="text-2xl font-bold text-yellow-400 mb-4">بوابة التوجيه</h2>
-      <p class="text-sm leading-relaxed">
-        منصة لمساعدة المتدربين والأساتذة والإدارة على توفير محتوى احترافي في مجالات الفندقة والسياحة.
-      </p>
-    </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">روابط سريعة</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-gray-400 hover:text-yellow-400 transition">الرئيسية</a></li>
+            <li><a href="platform.html" class="text-gray-400 hover:text-yellow-400 transition">تطبيقات المونتاج</a></li>
+            <li><a href="resources.html" class="text-gray-400 hover:text-yellow-400 transition">مواقع التحميل</a></li>
+            <li><a href="updates.html" class="text-gray-400 hover:text-yellow-400 transition">التحديثات</a></li>
+          </ul>
+        </div>
 
-    <!-- Services -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-4">خدمات</h3>
-      <ul class="space-y-2 text-sm">
-        <li>📘 دروس تعليمية</li>
-        <li>🎥 فيديوهات تدريبية</li>
-        <li>📂 موارد قابلة للتحميل</li>
-        <li>📰 أخبار وتحديثات</li>
-      </ul>
-    </div>
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">تواصل معنا</h3>
+          <p class="text-gray-400 text-sm mb-4">
+            للاستفسارات والاقتراحات، نحن هنا لخدمتك
+          </p>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-500 rounded-lg flex items-center justify-center transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-500 rounded-lg flex items-center justify-center transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+              </svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-yellow-500 rounded-lg flex items-center justify-center transition">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-    <!-- Newsletter & Social -->
-    <div>
-      <h3 class="text-lg font-semibold text-white mb-4">اشترك معنا</h3>
-      <p class="text-sm mb-3">توصل بآخر الأخبار والموارد عبر بريدك الإلكتروني:</p>
-      <form class="flex mb-4">
-        <input type="email" placeholder="أدخل بريدك" 
-               class="w-full p-2 rounded-l bg-gray-800 border border-gray-700 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400">
-        <button type="submit" 
-                class="bg-yellow-400 text-gray-900 px-4 rounded-r font-semibold hover:bg-yellow-500">
-          اشترك
-        </button>
-      </form>
-      <!-- Social Icons -->
-      <div class="flex space-x-4 rtl:space-x-reverse text-xl">
-        <a href="#" class="hover:text-yellow-400"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="hover:text-yellow-400"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="hover:text-yellow-400"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-gray-800 pt-8 text-center">
+        <p class="text-gray-400 text-sm">
+          © 2025 Royal Apps - جميع الحقوق محفوظة
+        </p>
+        <p class="text-yellow-400 text-sm mt-2 font-semibold">
+          تصميم وتطوير: مروان فارسي
+        </p>
       </div>
     </div>
-  </div>
-
-  <!-- Bottom -->
-  <div class="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
-    © 2025 بوابة التوجيه — جميع الحقوق محفوظة
-  </div>
-</footer>
-
-<!-- FontAwesome CDN -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+  </footer>
 
 </body>
 </html>
